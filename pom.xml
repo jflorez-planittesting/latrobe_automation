@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.planittesting.automation</groupId>
@@ -47,12 +49,13 @@
 			<version>${selenium-version}</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v100 -->
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v116 -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-devtools-v100</artifactId>
-			<version>4.2.2</version>
+			<artifactId>selenium-devtools-v116</artifactId>
+			<version>4.12.1</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
 		<dependency>
@@ -219,7 +222,7 @@
 							junit.jupiter.extensions.autodetection.enabled=true
 							junit.jupiter.execution.parallel.enabled=${parallel-test}
 							junit.jupiter.execution.parallel.mode.default=concurrent
-							junit.jupiter.execution.parallel.mode.classes.default=concurrent 
+							junit.jupiter.execution.parallel.mode.classes.default=concurrent
 							junit.jupiter.execution.parallel.config.strategy=${parallel-strategy}
 							junit.jupiter.execution.parallel.config.fixed.parallelism=${parallel-fixed-level}
 							junit.jupiter.execution.parallel.config.fixed.max-pool-size=${parallel-fixed-level}
